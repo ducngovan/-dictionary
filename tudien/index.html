@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu dien</title>
+</head>
+<body>
+<div class="content">
+    <div>
+        <h1>Tu Dien</h1>
+        <table>
+            <th>
+            <th><span>nhap tư </span></th>
+
+            <th><span>tu dich duoc</span></th>
+            </tr>
+            <tr>
+                <th><button type="button" onclick="check()">SUBMIT</button></th>
+                <td><input type="text" id="nhap"/></td>
+                <td><input type="text" id="dich"/></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function check() {
+            let nhap = document.getElementById('nhap').value;
+            let dich = document.getElementById('dich');
+            let eng = ['hello', 'student', 'address', 'name', 'age', 'number', 'phone', 'love', 'hate', 'kiss'];
+            let vie = ['chao', 'hoc sinh', 'dia chi', 'ten', 'tuoi', 'so', 'dien thoai', 'yeu', 'ghet', 'hon'];
+            let i;
+            for (i = 0; i < eng.length; i++) {
+                if (nhap === eng[i]) {
+                    // console.log(eng[i]);
+                    // console.log(vie[i]);
+                    // console.log(nhap);
+                    document.getElementById('dich').value = vie[i];
+                    break;
+                       }
+                     }
+
+
+                // console.log("ok");
+
+        if(i==eng.length) {
+            alert("khong co trong tu dien");s
+        }
+        }
+
+
+    </script>
+</body>
+</html>
